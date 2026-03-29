@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KAMS Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Key Account Management System</h1>
+
+    <div class="card">
+        <h2>Create Account</h2>
+        <input id="company" placeholder="Company Name">
+        <input id="industry" placeholder="Industry">
+        <button onclick="createAccount()">Create</button>
+    </div>
+
+    <div class="card">
+        <h2>Create Contract</h2>
+        <input id="title" placeholder="Title">
+        <input id="value" placeholder="Value">
+        <button onclick="createContract()">Create</button>
+    </div>
+
+    <div class="card">
+        <h2>Dashboard</h2>
+        <button onclick="loadDashboard()">Load Dashboard</button>
+
+        <div class="stats">
+            <div class="box">
+                <h3>Total Revenue</h3>
+                <p id="revenue">0</p>
+            </div>
+            <div class="box">
+                <h3>Active Contracts</h3>
+                <p id="active">0</p>
+            </div>
+            <div class="box">
+                <h3>Expired Contracts</h3>
+                <p id="expired">0</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
